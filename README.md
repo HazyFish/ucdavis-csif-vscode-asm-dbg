@@ -58,6 +58,10 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
         User username
         IdentityFile ~/.ssh/id_rsa
     ```
+- Return to **Terminal** and run command `ssh csif` to connect to a CSIF computer passwordlessly
+  - This command tests if everything is configured successfully
+  - If you are still prompted for entering a password, your SSH Key Authentication is not set up correctly
+  - You can connect to CSIF in this passwordless way on your computer from now on!
 
 ## Step 2: Create VS Code Tasks to Automate the Build Process
 
