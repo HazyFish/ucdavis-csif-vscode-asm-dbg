@@ -29,6 +29,7 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
         IdentityFile ~/.ssh/id_rsa
     ```
 - Return to **Windows PowerShell** and run command `ssh csif` to test if everything is configured successfully
+  - You can connect to CSIF in this way from now on!
 
 ### macOS
 
