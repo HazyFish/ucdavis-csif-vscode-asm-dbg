@@ -1,4 +1,4 @@
-# VSCode Assembly Debugging with UCDavis CSIF 
+# VSCode Remote Assembly Debugging on UCDavis CSIF Computers
 
 Debug your assembly code remotely on CSIF with VS Code on your local machine!
 
