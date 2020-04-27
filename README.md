@@ -12,7 +12,7 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 
 ## Step 1: Set Up SSH Key Authentication and SSH Config (Optional)
 
-### Windows 10
+### Windows 10 (version 1803 or later)
 
 - Open **Windows PowerShell** (Keyboard Shortcut: **Win+X** -> Windows PowerShell)
 - Run command `ssh-keygen` and press enter directly when you see any prompt(s)
