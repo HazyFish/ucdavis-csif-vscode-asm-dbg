@@ -12,6 +12,8 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 
 ## Step 1: Set Up SSH Key Authentication and SSH Config (Optional)
 
+In this step, you will setup passwordless login to CSIF using SSH Key Authentication and SSH Config. 
+
 Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later) | [Windows (earlier versions)](#windows-earlier-versions) | [macOS & Linux](#macos--linux)
 
 ### Windows 10 (version 1803 or later)
