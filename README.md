@@ -35,10 +35,25 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
   - If you are still prompted for entering a password, your SSH Key Authentication is not set up correctly
   - You can connect to CSIF in this passwordless way on your computer from now on!
 
-### macOS
+### macOS & Linux
 
-- Working on it
+- Open **Terminal**
+- Run command `ssh-keygen`
+  - You don't need to (of course you can) change the default location or set a password for the key, so press enter directly when you see any prompts
+  - This command generates a pair of public and private key used in SSH Key Authentication
+- Run command `ssh-copy-id username@pcXX.cs.ucdavis.edu`
+  - You need to replace `username` and `XX` in the command
+  - This command uploads the public key you just generated to a CSIF computer
+- Open **VS Code** and click the green button on the bottom-left corner
+- Select `Remote-SSH: Open Configuration File...` and choose the first option prompted
+- Replace the file content with the following and save it (of course, you need to replace `username` and `XX` too)
+    ```
+    Host csif
+        HostName pcXX.cs.ucdavis.edu
+        User username
+        IdentityFile ~/.ssh/id_rsa
+    ```
 
-## Step 2: Create VS Code Tasks to Automate the Build Process of Assembly Code
+## Step 2: Create VS Code Tasks to Automate the Build Process
 
 - Workig on it
