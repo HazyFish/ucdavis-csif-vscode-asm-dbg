@@ -34,6 +34,11 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
   - This command tests if everything is configured successfully
   - If you are still prompted for entering a password, your SSH Key Authentication is not set up correctly
   - You can connect to CSIF in this passwordless way on your computer from now on!
+  
+### Other Windows Version
+
+- If you are using Windows 10 version 1709 (Fall Creators Update), follow [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/) and then follow the instructions in the previous section
+- If you are using older versions of Windows, figure out how to run SSH commands by yourself and then follow the instructions in the previous section
 
 ### macOS & Linux
 
