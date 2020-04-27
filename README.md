@@ -21,7 +21,7 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 - Run command `cat ~/.ssh/id_rsa.pub | ssh username@pcXX.cs.ucdavis.edu "cat >> ~/.ssh/authorized_keys"`
   - You need to replace `username` and `XX` in the command
   - This command uploads the public key you just generated to a CSIF computer
-- Open **VS Code** and click the green button on the bottom-left corner
+- Open **VS Code** and click the little green button in the bottom-left corner of the window
 - Select `Remote-SSH: Open Configuration File...` and choose the first option prompted
 - Replace the file content with the following and save it (of course, you need to replace `username` and `XX` too)
     ```
@@ -44,7 +44,7 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 - Run command `ssh-copy-id username@pcXX.cs.ucdavis.edu`
   - You need to replace `username` and `XX` in the command
   - This command uploads the public key you just generated to a CSIF computer
-- Open **VS Code** and click the green button on the bottom-left corner
+- Open **VS Code** and click the little green button in the bottom-left corner of the window
 - Select `Remote-SSH: Open Configuration File...` and choose the first option prompted
 - Replace the file content with the following and save it (of course, you need to replace `username` and `XX` too)
     ```
