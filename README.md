@@ -2,7 +2,8 @@
 
 Debug your assembly code remotely on CSIF with VS Code on your local machine!
 
-**NO** local Linux environment (such as WSL or VM) or PuTTY is needed! 
+- **NO** local Linux environment (such as WSL or VM) or PuTTY is needed! 
+- **NO** makefile is needed for building executables any more! 
 
 ## Step 0: Get VS Code and SSH Extension Ready
 
