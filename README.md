@@ -1,2 +1,2 @@
-# ucdavis-csif-vscode-asm-dbg
-Debugging your assembly code on CSIF with VS Code
+# VSCode Assembly Debug with UCDavis CSIF 
+Debug your assembly code remotely on CSIF with VS Code on your local machine!
