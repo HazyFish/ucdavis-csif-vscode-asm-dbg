@@ -15,7 +15,8 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 ### Windows 10 (version 1803 or later)
 
 - Open **Windows PowerShell** (Keyboard Shortcut: **Win+X** -> Windows PowerShell)
-- Run command `ssh-keygen` and press enter directly when you see any prompt(s)
+- Run command `ssh-keygen`
+  - You don't need to (of course you can) change the default location or set a password for the key, so press enter directly when you see any prompts
   - This command generates a pair of public and private key used in SSH Key Authentication
 - Run command `cat ~/.ssh/id_rsa.pub | ssh username@pcXX.cs.ucdavis.edu "cat >> ~/.ssh/authorized_keys"`
   - You need to replace `username` and `XX` in the command
@@ -29,9 +30,9 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
         User username
         IdentityFile ~/.ssh/id_rsa
     ```
-- Return to **Windows PowerShell** and run command `ssh csif` to connect to a CSIF computer without password
+- Return to **Windows PowerShell** and run command `ssh csif` to connect to a CSIF computer passwordlessly
   - This command tests if everything is configured successfully
-  - You should `NOT` see a prompt asking for your password (if you see, SSH Key Authentication is not set up correctly)
+  - If you are still prompted for entering a password, your SSH Key Authentication is not set up correctly
   - You can connect to CSIF in this passwordless way on your computer from now on!
 
 ### macOS
