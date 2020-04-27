@@ -41,8 +41,8 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
   
 ### Windows (earlier versions)
 
-- If you are using Windows 10 version 1709 (Fall Creators Update), follow [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/) and then follow the instructions in the previous section
-- If you are using an even older version of Windows, figure out how to run SSH commands by yourself and then follow the instructions in the previous section
+- If you are using Windows 10 version 1709 (Fall Creators Update), follow [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/) and then follow the instructions in [the previous section](#windows-10-version-1803-or-later)
+- If you are using an even older version of Windows, figure out how to run SSH commands by yourself and then follow the instructions in [the previous section](#windows-10-version-1803-or-later)
 
 ### macOS & Linux
 
