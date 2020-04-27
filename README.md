@@ -10,7 +10,7 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 - Download & Install [VS Code](https://code.visualstudio.com/) (if not already).
 - Install VS Code Extension **Remote - SSH**
 
-## Step 1: Set Up SSH Key Authentication and SSH Config (Optional)
+## Step 1: Set Up Passwordless Login to CSIF (Optional)
 
 In this step, you will setup passwordless login to CSIF using SSH Key Authentication and SSH Config. 
 
