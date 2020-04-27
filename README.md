@@ -29,8 +29,10 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
         User username
         IdentityFile ~/.ssh/id_rsa
     ```
-- Return to **Windows PowerShell** and run command `ssh csif` to test if everything is configured successfully
-  - You can connect to CSIF in this way from now on!
+- Return to **Windows PowerShell** and run command `ssh csif` to connect to a CSIF computer without password
+  - This command tests if everything is configured successfully
+  - You should `NOT` see a prompt asking for your password (if you see, SSH Key Authentication is not set up correctly)
+  - You can connect to CSIF in this passwordless way on your computer from now on!
 
 ### macOS
 
