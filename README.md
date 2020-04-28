@@ -176,14 +176,52 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
   - You should be able to see `gdb` start running in the integrated terminal
   - In the next step, you will be able to use the graphic debug interface in VS Code
 - Go to **Terminal -> Run Task... -> clean** to remove all the object files and executables
-- You are all set! The task definition file can be used for any assembly code files in the same folder!
+- You are almost there! The task definition file can be used for any assembly code files in the same folder!
   - Make sure to open the assembly file you want to build/debug before running the tasks!
 
 ## Step 4: Connect gdb with the Graphic Debug Interface in VS Code
 
-- Connect to CSIF in **VS Code** if not already
+- Connect to CSIF in **VS Code** and open the open the folder from the last step (`asm-repo`) if not already
 - Install VS Code Extension **C/C++** by **Microsoft**
   - This will install the extension on VS Code Server on CSIF instead of your local machine
   - There is no assembly debugger available, but we will later modify the config of the **C/C++** extension to make it work with assembly
-- TO BE CONTINUED
+- Go to **Run Menu -> Add Configuration... -> C++ (GDB/LLDB)**
+- Replace the content of `launch.json` with the following and save it
+  ```
+  {
+    // Made by HazyFish
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "link",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ]
+        }
+    ]
+  }
+  ```
+- Open the test assembly code file like `hello.s`
+- Go to **Run Menu -> Start Debugging** to start debugging the file you opened
+- You are all set now!
+  - You can add expressions in the **Watch** panel to watch the values, such as `$eax`, or `(long)a`
+  - You can add breakpoints in the **Breakpoints** panel
 
+## Step 5: Give me some Feedback
+- Give a star to this if you enjoy it!
+- Open up an issue or pull request to report typos, problems, or anything that can help me make this better
+- Follow me on GitHub! (optional)
