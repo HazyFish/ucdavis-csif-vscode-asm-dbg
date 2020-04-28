@@ -144,7 +144,6 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
                 "${fileBasenameNoExtension}.out",
                 "-melf_i386"
             ],
-            "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -159,8 +158,7 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
             "command": "gdb",
             "args": [
                 "${fileBasenameNoExtension}.out"
-            ],
-            "problemMatcher": []
+            ]
         },
         {
             "label": "clean",
@@ -170,8 +168,7 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
                 "-f",
                 "*.o",
                 "*.out"
-            ],
-            "problemMatcher": []
+            ]
         }
     ]
   }
