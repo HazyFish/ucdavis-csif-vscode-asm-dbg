@@ -8,7 +8,7 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 
 ### Content
 - [Step 0: Get VS Code and SSH Extension Ready](#step-0-get-vs-code-and-ssh-extension-ready)
-- [Step 1: Set Up Passwordless Login to CSIF (Optional)](#step-1-set-up-passwordless-login-to-csif-optional)
+- [Step 1: Setup Passwordless Login to CSIF (Optional)](#step-1-setup-passwordless-login-to-csif-optional)
 - [Step 2: Setup VS Code Server](#step-2-setup-vs-code-server)
 - [Step 3: Configure Tasks in VS Code](#step-3-configure-tasks-in-vs-code)
 - [Step 4: Connect gdb with the Graphic Debug Interface in VS Code](#step-4-connect-gdb-with-the-graphic-debug-interface-in-vs-code)
@@ -18,7 +18,7 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 - Download & Install [VS Code](https://code.visualstudio.com/) (if not already).
 - Install VS Code Extension **Remote - SSH**
 
-## Step 1: Set Up Passwordless Login to CSIF (Optional)
+## Step 1: Setup Passwordless Login to CSIF (Optional)
 
 In this step, you will setup passwordless login to CSIF using SSH Key Authentication and SSH Config. 
 
@@ -80,8 +80,8 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
 - Open **VS Code**
 - Click the little green button in the bottom-left corner of the window
 - Select **Remote-SSH: Connect to Host...**
-- Select **csif** if you followed [Step 1: Set Up Passwordless Login to CSIF (Optional)
-](#step-1-set-up-passwordless-login-to-csif-optional)
+- Select **csif** if you followed [Step 1: Setup Passwordless Login to CSIF (Optional)
+](#step-1-setup-passwordless-login-to-csif-optional)
   - If not, enter `username@pcXX.cs.ucdavis.edu` (of course, you need to replace `username` and `XX`) and press **enter**
 - Wait for VS Code to install VS Code Server on CSIF automatically
   - VS Code Server will be installed in `/home/username/.vscode-server` so other users don't have access to it
