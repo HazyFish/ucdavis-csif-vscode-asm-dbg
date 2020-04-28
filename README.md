@@ -225,3 +225,6 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
 - Give a star to this if you enjoy it!
 - Open up an issue or pull request to report typos, problems, or anything that can help make this better
 - Follow me on GitHub!
+
+## Reference
+- [Tasks in Visual Studio Code](https://code.visualstudio.com/docs/editor/tasks)
