@@ -4,6 +4,14 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
 
 - **NO** local Linux environment (such as WSL or VM) or PuTTY is needed! 
 - **NO** makefile is needed for building executables any more! 
+- **NO** need to use command-line `gdb` any more!
+
+### Content
+- [Step 0: Get VS Code and SSH Extension Ready](#step-0-get-vs-code-and-ssh-extension-ready)
+- [Step 1: Set Up Passwordless Login to CSIF (Optional)](#step-1-set-up-passwordless-login-to-csif-optional)
+- [Step 2: Setup VS Code Server](#step-2-setup-vs-code-server)
+- [Step 3: Configure Tasks in VS Code](#step-3-configure-tasks-in-vs-code)
+- [Step 4: Connect gdb with the Graphic Debug Interface in VS Code](#step-4-connect-gdb-with-the-graphic-debug-interface-in-vs-code)
 
 ## Step 0: Get VS Code and SSH Extension Ready
 
