@@ -72,7 +72,8 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
 - Open **VS Code**
 - Click the little green button in the bottom-left corner of the window
 - Select **Remote-SSH: Connect to Host...**
-- Select **csif** if you followed [Step 1](#step-1-set-up-passwordless-login-to-csif-optional)
+- Select **csif** if you followed [Step 1: Set Up Passwordless Login to CSIF (Optional)
+](#step-1-set-up-passwordless-login-to-csif-optional)
   - If not, enter `username@pcXX.cs.ucdavis.edu` (of course, you need to replace `username` and `XX`) and press **enter**
 - Wait for VS Code to install VS Code Server on CSIF automatically
   - VS Code Server will be installed in `/home/username/.vscode-server` so other users don't have access to it
