@@ -218,8 +218,8 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
 - Open the test assembly code file like `hello.s`
 - Go to **Run Menu -> Start Debugging** to start debugging the file you opened
 - You are all set now!
-  - You can add expressions in the **Watch** panel to watch the values, such as `$eax`, or `(long)a`
-  - You can add breakpoints in the **Breakpoints** panel
+  - You can add expressions in the **Watch** panel to watch the values, such as `$eax` and `(long)a`
+  - You can add breakpoints in the **Breakpoints** panel, such as `_start` and `done`
 
 ## Step 5: Give some Feedback
 - Give a star to this if you enjoy it!
