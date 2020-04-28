@@ -221,7 +221,7 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
   - You can add expressions in the **Watch** panel to watch the values, such as `$eax`, or `(long)a`
   - You can add breakpoints in the **Breakpoints** panel
 
-## Step 5: Give me some Feedback
+## Step 5: Give some Feedback
 - Give a star to this if you enjoy it!
 - Open up an issue or pull request to report typos, problems, or anything that can help me make this better
 - Follow me on GitHub! (optional)
