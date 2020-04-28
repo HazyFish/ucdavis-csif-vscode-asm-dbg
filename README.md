@@ -181,7 +181,7 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
 
 ## Step 4: Connect gdb with the Graphic Debug Interface in VS Code
 
-- Connect to CSIF in **VS Code** and open the open the folder from the last step (`asm-repo`) if not already
+- Connect to CSIF in **VS Code** and open the folder you were working on (`asm-repo`) if not already
 - Install VS Code Extension **C/C++** by **Microsoft**
   - This will install the extension on VS Code Server on CSIF instead of your local machine
   - There is no assembly debugger available, but we will later modify the config of the **C/C++** extension to make it work with assembly
