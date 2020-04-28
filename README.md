@@ -104,7 +104,70 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
       nop
 
   ```
-- TO BE CONTINUED
+- Go to **Terminal Menu -> Configure Tasks... -> Create tasks.json file from template -> Others**
+- Replace the content of `tasks.json` with the following and save it
+  ```
+  {
+    // Made by HazyFish
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "assemble",
+            "type": "shell",
+            "command": "as",
+            "args": [
+                "${fileBasename}",
+                "-o",
+                "${fileBasenameNoExtension}.o",
+                "--gstabs",
+                "--32"
+            ]
+        },
+        {
+            "label": "link",
+            "dependsOn": [
+                "assemble"
+            ],
+            "type": "shell",
+            "command": "ld",
+            "args": [
+                "${fileBasenameNoExtension}.o",
+                "-o",
+                "${fileBasenameNoExtension}.out",
+                "-melf_i386"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "debug",
+            "dependsOn": [
+                "link"
+            ],
+            "type": "shell",
+            "command": "gdb",
+            "args": [
+                "${fileBasenameNoExtension}.out"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-f",
+                "*.o",
+                "*.out"
+            ],
+            "problemMatcher": []
+        }
+    ]
+  }
+  ```
   
 
 ## Step 4: Connect gdb with the Graphic Debug Interface in VS Code
