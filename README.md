@@ -86,7 +86,7 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
 - Create a directory for assembly code files, like `mkdir asm-repo`
 - Open the directory in **VS Code**, like `code ./asm-repo`
   - A new window should be opened
-- Create an assembly code file inside the folder with some code for testing, like `hello.asm`
+- Create an assembly code file inside the folder with some code for testing, like `hello.s`
   ```
   .global _start
 
