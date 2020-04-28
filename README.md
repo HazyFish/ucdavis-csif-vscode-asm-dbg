@@ -26,7 +26,7 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
   - You need to replace `username` and `XX` in the command
   - This command uploads the public key you just generated to a CSIF computer
 - Open **VS Code** and click the little green button in the bottom-left corner of the window
-- Select `Remote-SSH: Open Configuration File...` and choose the first option prompted
+- Select **Remote-SSH: Open Configuration File...** and choose the first option prompted
 - Replace the file content with the following and save it (of course, you need to replace `username` and `XX` too)
     ```
     Host csif
