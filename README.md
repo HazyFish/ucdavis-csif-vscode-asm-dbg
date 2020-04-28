@@ -54,7 +54,7 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
   - You need to replace `username` and `XX` in the command
   - This command uploads the public key you just generated to a CSIF computer
 - Open **VS Code** and click the little green button in the bottom-left corner of the window
-- Select `Remote-SSH: Open Configuration File...` and choose the first option prompted
+- Select **Remote-SSH: Open Configuration File...** and choose the first option prompted
 - Replace the file content with the following and save it (of course, you need to replace `username` and `XX` too)
     ```
     Host csif
@@ -67,6 +67,50 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
   - If you are still prompted for entering a password, your SSH Key Authentication is not set up correctly
   - You can connect to CSIF in this passwordless way on your computer from now on!
 
-## Step 2: Create VS Code Tasks to Automate the Build Process
+## Step 2: Setup VS Code Server
 
-- Workig on it
+- Open **VS Code**
+- Click the little green button in the bottom-left corner of the window
+- Select **Remote-SSH: Connect to Host...**
+- Select **csif** if you followed [Step 1](#step-1-set-up-passwordless-login-to-csif-optional)
+  - If not, enter `username@pcXX.cs.ucdavis.edu` (of course, you need to replace `username` and `XX`) and press **enter**
+- Wait for VS Code to install VS Code Server on CSIF automatically
+  - VS Code Server will be installed in `/home/username/.vscode-server` (which means it's not global)
+  - Retry if you get any error
+
+## Step 3: Configure Tasks in VS Code
+
+- Connect to CSIF in **VS Code** if not already
+- Open an integrated terminal inside **VS Code** (Terminal Menu -> New Terminal)
+  - You should notice that this terminal is already connected to the CSIF
+- Create a directory for assembly code files, like `mkdir asm-repo`
+- Open the directory in `VS Code`, like `code ./asm-repo`
+  - A new window should be opened
+- Create an assembly code file inside the folder with some code for testing, like `hello.asm`
+  ```
+  .global _start
+
+  .data
+  a:
+      .long 16
+
+  .text
+  _start:
+      movl a, %eax
+      addl $4, %eax
+  
+  done:
+      nop
+
+  ```
+- TO BE CONTINUED
+  
+
+## Step 4: Connect gdb with the Graphic Debug Interface in VS Code
+
+- Connect to CSIF in **VS Code** if not already
+- Install VS Code Extension **C/C++** by **Microsoft**
+  - This will install the extension on VS Code Server on CSIF instead of your local machine
+  - There is no assembly debugger available, but we will later modify the config of the **C/C++** extension to make it work with assembly
+- TO BE CONTINUED
+
