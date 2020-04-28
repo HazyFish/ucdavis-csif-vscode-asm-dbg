@@ -168,7 +168,16 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
     ]
   }
   ```
-  
+- Open the test assembly code file like `hello.s`
+- Go to **Terminal -> Run Build Task...** to build the executable from the currently opened file
+  - You should be able to see the output of assembler and linker in the integrated terminal
+  - The executable, like `hello.out`, is built
+- Go to **Terminal -> Run Task... -> debug** to debug the the executable built from the currently opened file
+  - You should be able to see `gdb` start running in the integrated terminal
+  - In the next step, you will be able to use the graphic debug interface in VS Code
+- Go to **Terminal -> Run Task... -> clean** to remove all the object files and executables
+- You are all set! The task definition file can be used for any assembly code files in the same folder!
+  - Make sure to open the assembly file you want to build/debug before running the tasks!
 
 ## Step 4: Connect gdb with the Graphic Debug Interface in VS Code
 
