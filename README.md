@@ -75,16 +75,16 @@ Jump to: [Windows 10 (version 1803 or later)](#windows-10-version-1803-or-later)
 - Select **csif** if you followed [Step 1](#step-1-set-up-passwordless-login-to-csif-optional)
   - If not, enter `username@pcXX.cs.ucdavis.edu` (of course, you need to replace `username` and `XX`) and press **enter**
 - Wait for VS Code to install VS Code Server on CSIF automatically
-  - VS Code Server will be installed in `/home/username/.vscode-server` (which means it's not global)
+  - VS Code Server will be installed in `/home/username/.vscode-server` so other users don't have access to it
   - Retry if you get any error
 
 ## Step 3: Configure Tasks in VS Code
 
-- Connect to CSIF in **VS Code** if not already
+- Connect to CSIF in **VS Code** (if not already)
 - Open an integrated terminal inside **VS Code** (Terminal Menu -> New Terminal)
   - You should notice that this terminal is already connected to the CSIF
 - Create a directory for assembly code files, like `mkdir asm-repo`
-- Open the directory in `VS Code`, like `code ./asm-repo`
+- Open the directory in **VS Code**, like `code ./asm-repo`
   - A new window should be opened
 - Create an assembly code file inside the folder with some code for testing, like `hello.asm`
   ```
