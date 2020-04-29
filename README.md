@@ -19,7 +19,7 @@ Debug your assembly code remotely and graphically on CSIF with VS Code **graphic
 - Click **Remote-SSH: Connect to Host...**
 
 - Select **csif** if you configured [Passwordless Login to CSIF](https://github.com/HazyFish/ucdavis-csif-passwordless)
-  - If not, enter `username@pcXX.cs.ucdavis.edu` (of course, you need to replace `username` and `XX`) in the textbox prompted, press **enter**, and then type password
+  - If not, in the textbox prompted, enter `username@pcXX.cs.ucdavis.edu` (you need to replace `username` and `XX`), press **enter**, and then enter your password for CSIF
 
 - Wait for VS Code to install VS Code Server on CSIF automatically
   - VS Code Server will be installed in `/home/username/.vscode-server` so other users don't have access to it
