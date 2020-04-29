@@ -33,7 +33,9 @@ Debug your assembly code remotely on CSIF with VS Code on your local machine!
   - You should notice that this terminal is already connected to the CSIF
 
 - Run the following command inside the integrated terminal
+
   `git clone --depth=1 --branch=master https://github.com/HazyFish/ucdavis-csif-vscode-asm-dbg.git assembly && rm -rf ./assembly/.git`
+
   - This command transfers the folder with configiration files and a sample assembly code file (written by me) to CSIF
 
 - Run command `code ./assembly` to open the folder in **VS Code**
