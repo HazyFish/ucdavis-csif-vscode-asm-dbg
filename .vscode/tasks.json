@@ -1,5 +1,6 @@
 {
     // Made by HazyFish
+    // https://github.com/HazyFish/ucdavis-csif-vscode-asm-dbg/
     "version": "2.0.0",
     "tasks": [
         {
