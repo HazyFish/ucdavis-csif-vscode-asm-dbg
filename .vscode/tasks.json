@@ -1,6 +1,6 @@
 {
     // Made by HazyFish
-    // https://github.com/HazyFish/ucdavis-csif-vscode-asm-dbg/
+    // https://github.com/HazyFish/ucdavis-csif-vscode-asm-dbg
     "version": "2.0.0",
     "tasks": [
         {
@@ -14,21 +14,39 @@
                 "--gstabs",
                 "--32"
             ],
-            "problemMatcher": {
-                "fileLocation": [
-                    "relative",
-                    "${workspaceFolder}"
-                ],
-                "pattern": [
-                    {
-                        "regexp": "^(.*):(\\d+):\\s*(Error|Warning):\\s*(.*)$",
-                        "file": 1,
-                        "location": 2,
-                        "severity": 3,
-                        "message": 4
-                    }
-                ]
-            }
+            "problemMatcher": [
+                {
+                    "fileLocation": [
+                        "relative",
+                        "${workspaceFolder}"
+                    ],
+                    "pattern": [
+                        {
+                            "regexp": "^(.*):(\\d+):\\s*(Error|Warning):\\s*(.*)$",
+                            "kind": "location",
+                            "file": 1,
+                            "location": 2,
+                            "severity": 3,
+                            "message": 4
+                        }
+                    ]
+                },
+                {
+                    "fileLocation": [
+                        "relative",
+                        "${workspaceFolder}"
+                    ],
+                    "pattern": [
+                        {
+                            "regexp": "^(.*):\\s*(Error|Warning):\\s*(.*)$",
+                            "kind": "file",
+                            "file": 1,
+                            "severity": 2,
+                            "message": 3
+                        }
+                    ]
+                },
+            ]
         },
         {
             "label": "link",
@@ -47,20 +65,38 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": {
-                "fileLocation": [
-                    "relative",
-                    "${workspaceFolder}"
-                ],
-                "pattern": [
-                    {
-                        "regexp": "^(.*):(.*):(\\d+):\\s*(.*)$",
-                        "file": 2,
-                        "location": 3,
-                        "message": 4
-                    }
-                ]
-            }
+            "problemMatcher": [
+                {
+                    "fileLocation": [
+                        "relative",
+                        "${workspaceFolder}"
+                    ],
+                    "pattern": [
+                        {
+                            "kind": "location",
+                            "regexp": "^(.*):(.*):(\\d+):\\s*(.*)$",
+                            "file": 2,
+                            "location": 3,
+                            "message": 4
+                        }
+                    ]
+                },
+                {
+                    "fileLocation": [
+                        "relative",
+                        "/usr/bin"
+                    ],
+                    "pattern": [
+                        {
+                            "kind": "file",
+                            "regexp": "^(ld):\\s*(error|warning):\\s*(.*)$",
+                            "file": 1,
+                            "severity": 2,
+                            "message": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "label": "debug",
