@@ -59,7 +59,7 @@ Debug your assembly code remotely and graphically on CSIF with VS Code **graphic
 - Go to **Terminal Menu -> Run Task... -> clean all** to remove all the object files and executables inside the folder
 
 - You are all set! You can put any assembly code files in this folder (or subfolder) to debug in this way!
-  - Make sure to open the assembly file you want to build/debug before running the tasks or debugging !
+  - Make sure to open the assembly file you want to build/debug before running the tasks or debugging!
 
 - To disconnect VS Code from CSIF, click the little green button on the bottom left and select **Close Remote Connection**
 
