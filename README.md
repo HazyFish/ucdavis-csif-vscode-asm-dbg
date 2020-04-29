@@ -1,6 +1,6 @@
 # VSCode Remote Assembly Debugging on UCDavis CSIF Computers
 
-Debug your assembly code remotely on CSIF with VS Code on your local machine!
+Debug your assembly code remotely and graphically on CSIF with VS Code **graphic debug interface** on your local machine!
 
 - **NO** local Linux environment (such as WSL or VM) or PuTTY is needed! 
 - **NO** makefile is needed for building executables any more! 
