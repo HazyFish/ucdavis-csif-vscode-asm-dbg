@@ -44,7 +44,7 @@ Debug your assembly code remotely and graphically on CSIF with VS Code **graphic
 
 - You are all almost there! Let's try it out!
 
-## Try it out
+### Try it out
 - Click `hello.s` on the left to open the sample assembly code file
 
 - Go to **Terminal Menu -> Run Build Task...** to build the executable from the currently opened file
