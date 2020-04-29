@@ -1,0 +1,94 @@
+{
+    // Made by HazyFish
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "assemble",
+            "type": "shell",
+            "command": "as",
+            "args": [
+                "${relativeFile}",
+                "-o",
+                "${relativeFileDirname}/${fileBasenameNoExtension}.o",
+                "--gstabs",
+                "--32"
+            ],
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern": [
+                    {
+                        "regexp": "^(.*):(\\d+):\\s*(Error|Warning):\\s*(.*)$",
+                        "file": 1,
+                        "location": 2,
+                        "severity": 3,
+                        "message": 4
+                    }
+                ]
+            }
+        },
+        {
+            "label": "link",
+            "dependsOn": [
+                "assemble"
+            ],
+            "type": "shell",
+            "command": "ld",
+            "args": [
+                "${relativeFileDirname}/${fileBasenameNoExtension}.o",
+                "-o",
+                "${relativeFileDirname}/${fileBasenameNoExtension}.out",
+                "-melf_i386"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern": [
+                    {
+                        "regexp": "^(.*):(.*):(\\d+):\\s*(.*)$",
+                        "file": 2,
+                        "location": 3,
+                        "message": 4
+                    }
+                ]
+            }
+        },
+        {
+            "label": "debug",
+            "dependsOn": [
+                "link"
+            ],
+            "type": "shell",
+            "command": "gdb",
+            "args": [
+                "${relativeFileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-f",
+                "${relativeFileDirname}/${fileBasenameNoExtension}.out",
+                "${relativeFileDirname}/${fileBasenameNoExtension}.o"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clean all",
+            "type": "shell",
+            "command": "find . \\( -name '*.o' -o -name '*.out' \\) -type f -delete",
+            "problemMatcher": []
+        }
+    ]
+}
